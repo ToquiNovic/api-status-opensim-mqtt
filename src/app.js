@@ -17,5 +17,5 @@ app.use("/api", require("./routes"));
 
 //start server
 app.listen(app.get("port"), () => {
-  console.log("😁 server en puerto", app.get("port",));
+  console.log(" ^_^ server en puerto", app.get("port",));
 });
