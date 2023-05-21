@@ -2,17 +2,12 @@ const mysql = require("mysql2");
 const { DB_HOST, DB_NAME, DB_PASS, DB_USER } = require("./config");
 
 const mysqlConnection = mysql.createPool({
-  // host: DB_HOST,
-  // user: DB_USER,
-  // password: DB_PASS,
-  // database: DB_NAME,
-  host: 'localhost',
-  user: 'root',
-  password: '',
-  database: 'MQTT',
-  // waitForConnections: true,
-  // connectionLimit: 10,
-  // queueLimit: 0
+  host: DB_HOST,
+  user: DB_USER,
+  password: DB_PASS,
+  waitForConnections: true,
+  connectionLimit: 10,
+  queueLimit: 0
 });
 
 mysqlConnection.getConnection(function (err) {
