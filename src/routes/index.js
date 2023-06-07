@@ -1,6 +1,7 @@
 const router = require("express").Router();
 
-router.use("/select", require("./select"));
-// router.use("/update", require("./update"));
+router.use("/teams", require("./team"));
+router.use("/sensors", require("./sensors"));
+router.use("/users", require("./users"));
 
 module.exports = router;

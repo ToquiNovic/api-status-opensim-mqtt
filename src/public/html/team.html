@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0-alpha1/css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0-alpha1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
+
+    <!---- Sweet Alert -->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <title>Gestión de equipos</title>
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/128/2808/2808331.png" />
+</head>
+
+<body>
+
+    <main class="container mt-5">
+        <h1 class="h2">Gestión de equipos</h1>
+
+        <h2>Equipos existentes</h2>
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#crear-equipo-modal">
+            Crear nuevo equipo
+        </button>
+        <table id="equipos" class="table">
+            <thead>
+                <tr>
+                    <th scope="col">ID del equipo</th>
+                    <th scope="col">Nombre del equipo</th>
+                    <th scope="col">Integrantes</th>
+                    <th scope="col">Estado</th>
+                </tr>
+            </thead>
+            <tbody id="equipos-tbody">
+            </tbody>
+        </table>
+    </main>
+
+    <div class="modal fade" id="crear-equipo-modal" tabindex="-1" aria-labelledby="crear-equipo-modal-label"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="crear-equipo-modal-label">Crear nuevo equipo</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="crear-equipo-form">
+                        <div class="mb-3">
+                            <label for="nombre-equipo" class="form-label">Nombre del equipo</label>
+                            <input type="text" class="form-control" id="nombre-equipo" name="nombre-equipo">
+                        </div>
+                        <div class="mb-3">
+                            <label for="integrante1" class="form-label">Integrante 1</label>
+                            <select class="form-select" id="integrante1" name="integrante1">
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="integrante2" class="form-label">Integrante 2</label>
+                            <select class="form-select" id="integrante2" name="integrante2">
+                            </select>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-primary" id="crear-equipo">Crear equipo</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/all-teams.js"></script>
+    <script src="../js/crear_equipo.js"></script>
+
+</body>
+
+</html>

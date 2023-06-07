@@ -1,0 +1,30 @@
+
+.hover-dropdown {
+  display: inline-block;
+  position: relative;
+}
+
+.hover-dropdown-options {
+  display: none;
+  position: absolute;
+  overflow: auto;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.hover-dropdown-options a {
+  padding: 12px 16px;
+  display: block;
+  text-decoration: none;
+  color: black;
+}
+
+.hover-dropdown-options a:hover {
+  background-color: #ddd;
+}
+
+.hover-dropdown:hover .hover-dropdown-options {
+  display: block;
+}

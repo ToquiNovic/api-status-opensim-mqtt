@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0-alpha1/css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0-alpha1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
+
+    <!---- Sweet Alert -->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <title>Crear Sensor</title>
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/128/2808/2808331.png" />
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center mb-4">Registrar Sensor</h1>
+        <form id="sensor-form">
+            <div class="mb-3">
+                <label for="nombre-sensor" class="form-label">Nombre del Sensor</label>
+                <input type="text" class="form-control" id="nombre-sensor" required>
+            </div>
+            <div class="mb-3">
+                <label for="equipo-sensor" class="form-label">Equipo</label>
+                <select class="form-select" id="equipo-sensor" required>
+                    <option value="" selected>Seleccione un equipo</option>
+                </select>
+            </div>            
+            <button type="submit" class="btn btn-primary" id="registrar-sensor">Registrar Sensor</button>
+        </form>
+    </div>
+    
+    <script src="../js/sensors-teams.js"></script>
+</body>
+</html>
