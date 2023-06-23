@@ -1,7 +1,7 @@
 <!-- toc -->
 - [Clonación del Repositorio](#Clonación-del-repositorio)
-- [Instalacion de dependencias](#instalacion-de-dependencias)
-- [Ejecucion](#ejecucion)
+- [Instalación de dependencias](#Instalación-de-dependencias)
+- [Ejecución](#Ejecución)
 <!-- tocstop -->
 
 ## Clonación del Repositorio
